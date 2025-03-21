@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +26,20 @@
     <!-- <script src="vistas/dist/js/demo.js"></script> -->
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini login-page">
 <!-- Site wrapper -->
-<div class="wrapper">
-</div>
+<?php
+    if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
 
-    <?php
+        echo '<script>
+            document.addEventListener("DOMContentLoaded", function(){
+                document.body.classList.remove("login-page");
+            });
+        </script>';
+
+        echo '<div class="wrapper">';
         include "modulos/cabezote.php";
         include "modulos/menu.php";
-
         if (isset($_GET["ruta"])) {
             if ($_GET["ruta"] == "inicio" ||
                 $_GET["ruta"] == "usuarios" ||
@@ -43,16 +52,18 @@
                 $_GET["ruta"] == "vencidas" ||
                 $_GET["ruta"] == "devoluciones" ||
                 $_GET["ruta"] == "salidas" ||
-                $_GET["ruta"] == "reportes") {
+                $_GET["ruta"] == "reportes"||
+                $_GET["ruta"] == "salir") {
                 include "modulos/".$_GET["ruta"].".php";
             } else {
                 include "modulos/error404.php";
             }
-        } else {
-            include "modulos/footer.php";
         }
-    ?>
-
-
+        include "modulos/footer.php";
+        echo '</div>';
+    } else {
+    include "modulos/login.php";
+    }
+?>
 </body>
 </html>
