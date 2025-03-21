@@ -24,7 +24,7 @@
                 <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="inicio" class="nav-link">
                         <i class="nav-icon fas fa-house"></i>
                         <p>
                             Inicio
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="usuarios" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Usuarios
@@ -41,19 +41,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../../index.html" class="nav-link">
+                            <a href="usuarios" class="nav-link">
                                 <p>Usuarios</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../../index2.html" class="nav-link">
+                            <a href="permisos" class="nav-link">
                                 <p>Permisos</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="equipos" class="nav-link">
                         <i class="nav-icon fas fa-laptop"></i>
                         <p>
                             Equipos
@@ -62,19 +62,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../charts/chartjs.html" class="nav-link">
+                            <a href="inventario" class="nav-link">
                                 <p>Inventario</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../charts/flot.html" class="nav-link">
+                            <a href="transpaso" class="nav-link">
                                 <p>Recepcion/Traspaso</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="solicitudes" class="nav-link">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
                             Solicitudes
@@ -83,19 +83,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../forms/general.html" class="nav-link">
+                            <a href="reservas" class="nav-link">
                                 <p>Reservas</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../forms/advanced.html" class="nav-link">
+                            <a href="inmediatas" class="nav-link">
                                 <p>Inmediatas</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="autorizar" class="nav-link">
                         <i class="nav-icon fas fa-check-circle"></i>
                         <p>
                             Autorizar
@@ -104,19 +104,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../tables/simple.html" class="nav-link">
+                            <a href="autorizaciones" class="nav-link">
                                 <p>Autorizaciones</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../tables/data.html" class="nav-link">
+                            <a href="vencidas" class="nav-link">
                                 <p>Solicitudes Vencidas</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="../kanban.html" class="nav-link">
+                    <a href="devoluciones" class="nav-link">
                         <i class="nav-icon fas fa-undo-alt"></i>
                         <p>
                             Devoluciones
@@ -124,7 +124,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../kanban.html" class="nav-link">
+                    <a href="salidas" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             Salidas
@@ -132,7 +132,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../kanban.html" class="nav-link">
+                    <a href="reportes" class="nav-link">
                         <i class="nav-icon fas fa-chart-bar"></i>
                         <p>
                             Reportes
