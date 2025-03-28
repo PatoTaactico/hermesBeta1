@@ -42,6 +42,8 @@
         include "modulos/menu.php";
         if (isset($_GET["ruta"])) {
             if ($_GET["ruta"] == "inicio" ||
+                $_GET["ruta"] == "fichas" ||
+                $_GET["ruta"] == "sedes" ||
                 $_GET["ruta"] == "usuarios" ||
                 $_GET["ruta"] == "permisos" ||
                 $_GET["ruta"] == "inventario" ||
