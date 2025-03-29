@@ -38,6 +38,24 @@
                                     $item = null;
                                     $valor = null;  
                                     $sedes = ControladorSedes::ctrMostrarSedes($item, $valor);
+                                    var_dump($sedes);
+
+                                    foreach ($sedes as $key => $value) {
+                                        echo '<tr>
+                                            <td>' . $value["id_sede"] . '</td>
+                                            <td>' . $value["nombre"] . '</td>
+                                            <td>' . $value["direccion"] . '</td>
+                                            <td>' . $value["descripcion"] . '</td>
+                                            <td>';
+                                            if ($value["estado"] == "activa") {
+                                                echo '<button class>Activo</button>';
+                                            } else {
+                                                echo '<button class>Inactivo</button>';
+                                            }
+                                            echo '<td><button class="btn btn-default" data-toggle="modal" data-target="#editarModal"><i class="fas fa-edit"></i></button></td>
+                                            </tr>';
+                                    }
+
                                     ?>
                                     <tr>
                                         <td>1</td>
